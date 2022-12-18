@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "name": "Aspirar",
+      "dateStart": "15/12/2022",
+      "dateEnd": "24/12/2022",
+      "status": "undone",
+      "id": 3
+    },
+    {
+      "name": "Lavadora",
+      "dateStart": "15/12/2022",
+      "dateEnd": "22/12/2022",
+      "status": "done",
+      "id": 4
+    },
+    {
+      "name": "Lavar coche",
+      "dateStart": "18/12/2022",
+      "dateEnd": "23/12/2022",
+      "status": "undone",
+      "id": 9
+    },
+    {
+      "name": "Peluquería",
+      "dateStart": "18/12/2022",
+      "dateEnd": "22/12/2022",
+      "status": "undone",
+      "id": 10
+    },
+    {
+      "name": "Hacienda",
+      "dateStart": "18/12/2022",
+      "dateEnd": "27/12/2022",
+      "status": "undone",
+      "id": 11
+    }
+  ]
+}

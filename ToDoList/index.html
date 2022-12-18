@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="index.js"></script>
+  <title>To Do List</title>
+</head>
+<body>
+  <header>
+    <h1>MIS TAREAS</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html"><button type="button">Inicio</button></a></li>
+      <li><button type="button" id="newTask">Añadir</button></li>
+      <li><button type="button" id="searchTask">Buscar</button></li>
+      <li><button type="button" id="showGraphic">Gráfico</button></li>
+    </ul>
+  </nav>
+  <main class="mainContent">
+    <form class="dataForm">
+      <div>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" required>
+      </div>
+      <div>
+        <label for="dateEnd">Fecha fin</label>
+        <input type="date" name="dateEnd" required>
+      </div>
+      <input type="submit" value="Enviar" name="send">
+    </form>
+    <form class="searchForm">
+      <input type="text" placeholder="Buscar" class="searchBar">
+    </form>
+    <section class="taskBoard">
+      <table class="tableData">
+        <thead>
+          <th>Nombre</th>
+          <th>Inicio</th>
+          <th>Fin</th>
+        </thead>
+        <tbody class="tableContent"> </tbody>
+      </table>
+    </section>
+    <section>
+      <form class="editForm">
+        <h3>Editar Tarea:</h3>
+        <div>
+          <label for="nameEdit">Nombre</label>
+          <input type="text" name="nameEdit" id="nameEdit" required>
+        </div>
+        <div>
+          <label for="dateEndEdit">Fecha fin</label>
+          <input type="date" name="dateEndEdit" id="dateEndEdit" required>
+        </div>
+        <input type="hidden" id="dateStartEdit">
+        <input type="hidden" id="idEdit">
+        <input type="submit" value="Enviar" name="sendEdit" class="sendEdit">
+      </form>
+    </section>
+    <section class="counterContainer">
+      <canvas class="taskCounter"></canvas>
+    </section>
+    <!-- Template -->
+    <template class="showData">
+      <tr class="taskRow">
+        <td class="nameTask"></td>
+        <td class="dateStart"></td>
+        <td class="dateEnd"></td>
+        <td>
+          <button type="button" class="done">Finalizar</button>
+          <button type="button" class="delete">Eliminar</button>
+          <button type="button" class="edit">Editar</button>
+        </td>
+      </tr>
+    </template>
+  </main>
+  <footer>
+    <p>Antonio Ruiz Gálvez &#9400</p>
+  </footer>
+</body>
+</html>

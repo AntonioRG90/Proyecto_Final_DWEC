@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <title>El Tiempo</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li id="searchByCity"><img src="./images/menu.png" alt=""></li>
+    </ul>
+    <div id="hamburguerMenu">
+      <form action="#">
+        <input type="text" placeholder="Ciudad" id="city">
+      </form>
+    </div>
+  </nav>
+ 
+  <main id="main">
+    <template id="template-weather">
+      <div id="card1">
+        <p class="cityName"></p>
+        <img src="" alt="" class="status">
+        <div class="tMax">
+          <img src="./images/tmax.png" alt="">
+          <span></span> ºC
+        </div>
+        <div class="tMin">
+          <img src="./images/tmin.png" alt="">
+          <span></span> ºC
+        </div>
+        <div class="windSpeed">
+          <img src="./images/wind.png" alt="">
+          <span></span> Km/h
+        </div>
+        <div class="pressure">
+          <img src="./images/pressure.png" alt="">
+          <span></span> mb
+        </div>
+     </div>
+    </template>
+  </main>
+</body>
+</html>
+
+
+
+<!-- https://api.openweathermap.org/data/2.5/weather?lat=37.1881700&lon=-3.6066700&appid=80fec4e0cb0181d285e699cb7337eacf&units=metric -->

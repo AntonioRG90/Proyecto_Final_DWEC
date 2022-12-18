@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+:root{
+  --bgColor :rgb(48, 111, 245);
+  --fontColor: wheat;
+}
+body{
+  box-sizing: content-box;
+  font-family: 'Exo', sans-serif;
+  margin: 0px;
+  text-align: center;
+  position: relative;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 100px;
+}
+header, footer{
+  align-items: center;
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+  display: flex;
+  height: 130px;
+  font-family: 'Indie Flower';
+  font-size: 30px;
+  justify-content: center;
+}
+input{
+  font-family:  'Exo', sans-serif;
+}
+nav{
+  align-items:flex-start;
+  background-color: var(--bgColor);
+  display: flex;
+  height: 70px;
+  justify-content:center;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Exo', sans-serif;
+  padding: 5px 10px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+nav ul li{
+  border: solid 1px var(--fontColor);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+nav ul li button{
+  background-color: var(--bgColor);
+  color:var(--fontColor);
+  font-size: 15px;
+}
+/* INICIO */
+.tableData{
+  border-spacing:0px 10px;
+  margin: 30px auto;
+}
+.tableData th{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.tableData td{
+  padding: 5px 10px;
+}
+.tableData button{
+  background-color: white;
+  border: solid 1px var(--bgColor);
+}
+/* AÑADIR */
+.dataForm, .searchForm, .editForm{
+  border: solid 1px black;
+  border-radius: 5px;
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: fit-content;
+}
+.dataForm div, .editForm div{
+  display: flex;
+  flex-direction: column;
+}
+.dataForm input, .editForm input{
+  margin: 10px 0;
+}
+.dataForm input[type="submit"], .editForm input[type="submit"]{
+  background-color: var(--bgColor);
+  border: none;
+  border-radius: 5px;
+  color: var(--fontColor);
+  cursor: pointer;
+  padding: 5px 10px;
+}
+/* BUSCAR */
+.searchForm input::placeholder{
+  text-align: center;
+}
+.editForm{
+  display: none;
+  margin-bottom: 50px;
+}
+/* GRAFICO */
+.taskCounter{
+  display: none;
+  width: fit-content;
+}
+.counterContainer{
+  height: 500px;
+  margin: 50px auto;
+  width: 500px;
+}
+footer{
+  bottom: 0;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
